@@ -8,9 +8,28 @@
 2. 模型调用
 3. 事件传递
 
+##1函数传递
+
+头文件
 ```
 #import <JavaScriptCore/JavaScriptCore.h>
 ```
+
+h5 函数
+```
+var jsFunc = function() {
+alert('Objective-C call js to show alert');
+}
+
+```
+OC 使用
+```
+// JS调用后OC后，又通过OC调用JS，但是这个是没有传参数的
+JSValue *jsFunc = self.jsContext[@"jsFunc"];
+[jsFunc callWithArguments:nil];
+
+```
+
 
 ##2模型调用
 
