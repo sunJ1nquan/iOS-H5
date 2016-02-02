@@ -15,6 +15,8 @@
 		73FDCCB71C4F61CA00A69D58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73FDCCB51C4F61CA00A69D58 /* LaunchScreen.storyboard */; };
 		73FDCCC21C4F61CB00A69D58 /* webViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73FDCCC11C4F61CB00A69D58 /* webViewTests.m */; };
 		73FDCCCD1C4F61CB00A69D58 /* webViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73FDCCCC1C4F61CB00A69D58 /* webViewUITests.m */; };
+		73FDCCDB1C4F726200A69D58 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73FDCCDA1C4F726200A69D58 /* JavaScriptCore.framework */; };
+		73FDCCDD1C4F80C400A69D58 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 73FDCCDC1C4F80C400A69D58 /* test.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		73FDCCC81C4F61CB00A69D58 /* webViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = webViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73FDCCCC1C4F61CB00A69D58 /* webViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = webViewUITests.m; sourceTree = "<group>"; };
 		73FDCCCE1C4F61CB00A69D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73FDCCDA1C4F726200A69D58 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		73FDCCDC1C4F80C400A69D58 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73FDCCDB1C4F726200A69D58 /* JavaScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,7 @@
 		73FDCC9B1C4F61C900A69D58 = {
 			isa = PBXGroup;
 			children = (
+				73FDCCDA1C4F726200A69D58 /* JavaScriptCore.framework */,
 				73FDCCA61C4F61CA00A69D58 /* webView */,
 				73FDCCC01C4F61CB00A69D58 /* webViewTests */,
 				73FDCCCB1C4F61CB00A69D58 /* webViewUITests */,
@@ -101,6 +107,7 @@
 		73FDCCA61C4F61CA00A69D58 /* webView */ = {
 			isa = PBXGroup;
 			children = (
+				73FDCCDC1C4F80C400A69D58 /* test.html */,
 				73FDCCAA1C4F61CA00A69D58 /* AppDelegate.h */,
 				73FDCCAB1C4F61CA00A69D58 /* AppDelegate.m */,
 				73FDCCAD1C4F61CA00A69D58 /* ViewController.h */,
@@ -243,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73FDCCDD1C4F80C400A69D58 /* test.html in Resources */,
 				73FDCCB71C4F61CA00A69D58 /* LaunchScreen.storyboard in Resources */,
 				73FDCCB41C4F61CA00A69D58 /* Assets.xcassets in Resources */,
 				73FDCCB21C4F61CA00A69D58 /* Main.storyboard in Resources */,
