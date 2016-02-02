@@ -17,6 +17,7 @@
 		73FDCCCD1C4F61CB00A69D58 /* webViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73FDCCCC1C4F61CB00A69D58 /* webViewUITests.m */; };
 		73FDCCDB1C4F726200A69D58 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73FDCCDA1C4F726200A69D58 /* JavaScriptCore.framework */; };
 		73FDCCDD1C4F80C400A69D58 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 73FDCCDC1C4F80C400A69D58 /* test.html */; };
+		F16FD7DA1C609D660087B2AB /* HYBJsObjCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F16FD7D91C609D660087B2AB /* HYBJsObjCModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +55,10 @@
 		73FDCCCC1C4F61CB00A69D58 /* webViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = webViewUITests.m; sourceTree = "<group>"; };
 		73FDCCCE1C4F61CB00A69D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73FDCCDA1C4F726200A69D58 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		73FDCCDC1C4F80C400A69D58 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		73FDCCDC1C4F80C400A69D58 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = test.html; path = webView/test.html; sourceTree = "<group>"; };
+		F16FD7D71C609C9B0087B2AB /* JavaScriptObjectiveCDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JavaScriptObjectiveCDelegate.h; path = JSModel/JavaScriptObjectiveCDelegate.h; sourceTree = "<group>"; };
+		F16FD7D81C609D660087B2AB /* HYBJsObjCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HYBJsObjCModel.h; path = JSModel/HYBJsObjCModel.h; sourceTree = "<group>"; };
+		F16FD7D91C609D660087B2AB /* HYBJsObjCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HYBJsObjCModel.m; path = JSModel/HYBJsObjCModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +90,11 @@
 		73FDCC9B1C4F61C900A69D58 = {
 			isa = PBXGroup;
 			children = (
-				73FDCCDA1C4F726200A69D58 /* JavaScriptCore.framework */,
-				73FDCCA61C4F61CA00A69D58 /* webView */,
+				73FDCCDC1C4F80C400A69D58 /* test.html */,
+				F16FD7D51C609BF00087B2AB /* WebView */,
 				73FDCCC01C4F61CB00A69D58 /* webViewTests */,
 				73FDCCCB1C4F61CB00A69D58 /* webViewUITests */,
+				F16FD7DB1C609E1B0087B2AB /* FrameWork */,
 				73FDCCA51C4F61C900A69D58 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,7 +112,7 @@
 		73FDCCA61C4F61CA00A69D58 /* webView */ = {
 			isa = PBXGroup;
 			children = (
-				73FDCCDC1C4F80C400A69D58 /* test.html */,
+				F16FD7D61C609C260087B2AB /* JSModel */,
 				73FDCCAA1C4F61CA00A69D58 /* AppDelegate.h */,
 				73FDCCAB1C4F61CA00A69D58 /* AppDelegate.m */,
 				73FDCCAD1C4F61CA00A69D58 /* ViewController.h */,
@@ -145,6 +150,32 @@
 				73FDCCCE1C4F61CB00A69D58 /* Info.plist */,
 			);
 			path = webViewUITests;
+			sourceTree = "<group>";
+		};
+		F16FD7D51C609BF00087B2AB /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				73FDCCA61C4F61CA00A69D58 /* webView */,
+			);
+			name = WebView;
+			sourceTree = "<group>";
+		};
+		F16FD7D61C609C260087B2AB /* JSModel */ = {
+			isa = PBXGroup;
+			children = (
+				F16FD7D71C609C9B0087B2AB /* JavaScriptObjectiveCDelegate.h */,
+				F16FD7D81C609D660087B2AB /* HYBJsObjCModel.h */,
+				F16FD7D91C609D660087B2AB /* HYBJsObjCModel.m */,
+			);
+			name = JSModel;
+			sourceTree = "<group>";
+		};
+		F16FD7DB1C609E1B0087B2AB /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				73FDCCDA1C4F726200A69D58 /* JavaScriptCore.framework */,
+			);
+			name = FrameWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +311,7 @@
 			files = (
 				73FDCCAF1C4F61CA00A69D58 /* ViewController.m in Sources */,
 				73FDCCAC1C4F61CA00A69D58 /* AppDelegate.m in Sources */,
+				F16FD7DA1C609D660087B2AB /* HYBJsObjCModel.m in Sources */,
 				73FDCCA91C4F61CA00A69D58 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,6 +538,7 @@
 				73FDCCD31C4F61CB00A69D58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73FDCCD41C4F61CB00A69D58 /* Build configuration list for PBXNativeTarget "webViewTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +547,7 @@
 				73FDCCD61C4F61CB00A69D58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73FDCCD71C4F61CB00A69D58 /* Build configuration list for PBXNativeTarget "webViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +556,7 @@
 				73FDCCD91C4F61CB00A69D58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
